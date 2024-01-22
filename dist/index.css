@@ -1,0 +1,31 @@
+/* Some colors and spacing stolen from http://bettermotherfuckingwebsite.com/ and https://thebestmotherfucking.website/ */
+/* Some font stack pointers stolen from https://css-tricks.com/snippets/css/system-font-stack/ */
+
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #eeeeee;
+    color: #454545;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 2em auto;
+    max-width: 800px;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    line-height: 1.2;
+}
+
+a {
+    color: #0077aa;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111111;
+        color: #d9d9d9;
+    }
+
+    a {
+        color: #00a2e7;
+    }
+}
