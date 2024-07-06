@@ -19,6 +19,11 @@ a {
     color: #0077aa;
 }
 
+a[target="_blank"]::after {
+    /* padding-left: 0.5rem; */
+    content: " ⧉";
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #111111;
