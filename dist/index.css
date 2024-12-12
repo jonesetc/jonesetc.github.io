@@ -24,6 +24,33 @@ a[target="_blank"]::after {
     content: " ⧉";
 }
 
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-left: 0;
+}
+
+header nav li {
+    list-style-type: none;
+    flex-shrink: 0;
+}
+
+header nav li.active {
+    text-decoration: underline;
+}
+
+header nav a {
+    color: #454545;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #454545;
+    text-decoration: underline;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #111111;
@@ -32,5 +59,14 @@ a[target="_blank"]::after {
 
     a {
         color: #00a2e7;
+    }
+
+    header nav a {
+        color: #d9d9d9;
+    }
+
+    header nav a:hover {
+        color: #d9d9d9;
+        text-decoration: underline;
     }
 }
